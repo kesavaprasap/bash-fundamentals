@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-read w
-read h
 
-echo "$((w * h))"
+read name
+read age
+
+echo "Hi, ${name}! You are ${age} years old."
