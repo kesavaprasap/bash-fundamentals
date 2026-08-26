@@ -1,0 +1,66 @@
+{
+  "course": "bash-fundamentals",
+  "language": "bash",
+  "language_id": 46,
+  "entrypoint": "main.sh",
+  "version": 1,
+  "content_hash": "86dbfdbf00d43e0c",
+  "lessons": [
+    {
+      "slug": "hello-world",
+      "tests_hash": "d1401242a290"
+    },
+    {
+      "slug": "variables",
+      "tests_hash": "4ccc141f8a2f"
+    },
+    {
+      "slug": "arithmetic",
+      "tests_hash": "69adc0cc5957"
+    },
+    {
+      "slug": "strings",
+      "tests_hash": "eb06fa6128a5"
+    },
+    {
+      "slug": "printf-and-heredocs",
+      "tests_hash": "a0179a7563e1"
+    },
+    {
+      "slug": "if-and-case",
+      "tests_hash": "1720a777f726"
+    },
+    {
+      "slug": "loops",
+      "tests_hash": "d936b3338ca8"
+    },
+    {
+      "slug": "functions",
+      "tests_hash": "4e6757737a4d"
+    },
+    {
+      "slug": "pipes-and-redirection",
+      "tests_hash": "20d1a75b4381"
+    },
+    {
+      "slug": "arrays",
+      "tests_hash": "824618d94a04"
+    },
+    {
+      "slug": "script-hygiene",
+      "tests_hash": "6da2ebbae97c"
+    },
+    {
+      "slug": "command-substitution",
+      "tests_hash": "3bcef7ccc557"
+    },
+    {
+      "slug": "exit-status",
+      "tests_hash": "6c29bda63792"
+    },
+    {
+      "slug": "getopts",
+      "tests_hash": "dfa2c2d5e220"
+    }
+  ]
+}
