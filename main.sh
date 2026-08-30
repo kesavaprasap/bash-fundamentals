@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
 read line
+nums=($line)
 
-word=$(echo -n "$line" | wc -w)
+max=${nums[1]}
 
-echo "$word"
+for i in "${nums[@]}"; do
+	if (( i > max )); then
+		max=$i
+	fi
+done
+echo "$max"
+
+
