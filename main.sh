@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
+read n
 
-read name
-read age
-
-printf "Name: %s, Age: %d" "$name" "$age"
+if (($n % 15 == 0)); then
+	echo "FizzBuzz"
+elif (($n % 3 == 0)); then
+	echo "Fizz"
+elif (( $n % 5 == 0)); then
+	echo "Buzz"
+else echo "$n"
+fi
