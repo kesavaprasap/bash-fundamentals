@@ -1,15 +1,6 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
 read line
-nums=($line)
 
-max=${nums[1]}
-
-for i in "${nums[@]}"; do
-	if (( i > max )); then
-		max=$i
-	fi
-done
-echo "$max"
-
-
+printf '%s\n' "$line" | tr ' ' '\n' | sort -u | wc -l
