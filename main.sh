@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-square() {
-	echo "$(($1*$1))"
-}
+read line
 
-read n
-square $n
+word=$(echo -n "$line" | wc -w)
+
+echo "$word"
