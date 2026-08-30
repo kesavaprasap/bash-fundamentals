@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
 read n
+sum=0
 
-if (($n % 15 == 0)); then
-	echo "FizzBuzz"
-elif (($n % 3 == 0)); then
-	echo "Fizz"
-elif (( $n % 5 == 0)); then
-	echo "Buzz"
-else echo "$n"
-fi
+for ((i=1; i<=n; i++)); do
+	sum=$((sum+i))
+done
+
+echo "$sum"
