@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
+square() {
+	echo "$(($1*$1))"
+}
+
 read n
-sum=0
-
-for ((i=1; i<=n; i++)); do
-	sum=$((sum+i))
-done
-
-echo "$sum"
+square $n
