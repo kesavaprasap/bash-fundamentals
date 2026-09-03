@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-read -r line
+read -r path
 
-word_count=$(printf '%s\n' "$line" | wc -w)
-echo "words: $word_count"
+if [ -f "$path" ]; then
+	echo "exists: $path"
+else
+	echo "missing: $path"
+fi
