@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-read -r path
+read -r flag
 
-if [ -f "$path" ]; then
-	echo "exists: $path"
+read -r name
+
+if [ "$flag" = "-n" ] && [ -n "$name" ]; then
+	echo "Hi, $name"
+elif [ "$flag" = "-g" ] && [ -n "$name" ]; then
+	echo "Greetings, $name!"
 else
-	echo "missing: $path"
+	echo "usage"
 fi
