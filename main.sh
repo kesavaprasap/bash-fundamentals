@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
-read line
+read -r line
 
-printf '%s\n' "$line" | tr ' ' '\n' | sort -u | wc -l
+word_count=$(printf '%s\n' "$line" | wc -w)
+echo "words: $word_count"
